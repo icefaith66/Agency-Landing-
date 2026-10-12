@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SILVER STYLELING STUDIO</title>
+  <meta name="description" content="silver styling Studio builds websites, campaigns and brands that turn attention into revenue." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: { 50: '#eef6ff', 100: '#d9eaff', 400: '#5aa2ff', 500: '#2f80ff', 600: '#1a63e8', 700: '#154fc0' },
+            ink: { 900: '#0b1220', 800: '#121a2b', 700: '#1c2740' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-slate-700 antialiased">
+
+  <!-- Header -->
+  <header id="top" class="fixed inset-x-0 top-0 z-50 bg-ink-900/80 backdrop-blur border-b border-white/10">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#top" class="flex items-center gap-2 text-white">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-brand-500 font-bold">N</span>
+        <span class="text-lg font-semibold tracking-tight">Silver Styling Studio</span>
+      </a>
+
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-medium text-slate-300 hover:text-white transition">Services</a>
+        <a href="#results" class="text-sm font-medium text-slate-300 hover:text-white transition">Results</a>
+        <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-white transition">Clients</a>
+        <a href="#contact" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition">Book a Strategy Call</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden rounded-md p-2 text-slate-300 hover:text-white" aria-label="Open menu" aria-expanded="false">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink-900 md:hidden">
+      <div class="space-y-1 px-4 py-4">
+        <a href="#services" class="block rounded-md px-3 py-2 text-slate-300 hover:bg-white/5 hover:text-white">Services</a>
+        <a href="#results" class="block rounded-md px-3 py-2 text-slate-300 hover:bg-white/5 hover:text-white">Results</a>
+        <a href="#testimonials" class="block rounded-md px-3 py-2 text-slate-300 hover:bg-white/5 hover:text-white">Clients</a>
+        <a href="#contact" class="mt-2 block rounded-lg bg-brand-500 px-3 py-3 text-center font-semibold text-white">Book a Strategy Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-ink-900 pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <div class="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-brand-500/25 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          Now accepting 3 new clients this quarter
+        </span>
+
+        <h1 class="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Digital experiences that turn
+          <span class="bg-gradient-to-r from-brand-400 to-cyan-300 bg-clip-text text-transparent">visitors into revenue</span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+          We design, build and grow high-performing websites, campaigns and brands for ambitious companies. Strategy first, measurable results always.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="#contact" class="w-full sm:w-auto rounded-xl bg-brand-500 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-brand-500/30 hover:bg-brand-600 hover:-translate-y-0.5 transition">
+            Get Your Free Growth Audit
+          </a>
+          <a href="#results" class="w-full sm:w-auto rounded-xl border border-white/20 px-8 py-4 text-base font-semibold text-white hover:bg-white/5 transition">
+            See Our Work
+          </a>
+        </div>
+
+        <p class="mt-4 text-sm text-slate-400">No commitment. Response within 24 hours.</p>
+      </div>
+
+      <!-- Stats -->
+      <div id="results" class="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-6 rounded-2xl border border-white/10 bg-white/5 p-6 sm:grid-cols-4 sm:p-8">
+        <div class="text-center">
+          <p class="text-3xl font-bold text-white">240+</p>
+          <p class="mt-1 text-sm text-slate-400">Projects delivered</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-white">3.2x</p>
+          <p class="mt-1 text-sm text-slate-400">Avg. conversion lift</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-white">98%</p>
+          <p class="mt-1 text-sm text-slate-400">Client retention</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-white">12</p>
+          <p class="mt-1 text-sm text-slate-400">Industry awards</p>
+        </div>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="mt-14 text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">Trusted by teams at</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-lg font-semibold text-slate-500">
+          <span>Meridian</span><span>Atlas Group</span><span>Kestrel</span><span>Vantage</span><span>Orbitly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="services" class="bg-slate-50 py-20 sm:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-brand-600">What we do</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">Everything you need to grow online</h2>
+        <p class="mt-4 text-lg text-slate-600">One team covering strategy, design, development and performance marketing, so nothing gets lost between vendors.</p>
+      </div>
+
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">Web Design & Development</h3>
+          <p class="mt-2 text-slate-600">Fast, accessible websites built to convert, with clean code your team can manage.</p>
+        </div>
+
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">Performance Marketing</h3>
+          <p class="mt-2 text-slate-600">Paid search and social campaigns managed against one metric: return on ad spend.</p>
+        </div>
+
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.2-5.2M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">SEO & Content</h3>
+          <p class="mt-2 text-slate-600">Search-led content strategies that build organic traffic you own long term.</p>
+        </div>
+
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.3M11 7.3l1.7-1.6a2 2 0 012.8 0l2.8 2.8a2 2 0 010 2.8L11 18.6"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">Brand Identity</h3>
+          <p class="mt-2 text-slate-600">Positioning, visual identity and messaging that make you the obvious choice.</p>
+        </div>
+
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">Analytics & CRO</h3>
+          <p class="mt-2 text-slate-600">Clear dashboards and continuous testing to squeeze more value from every visit.</p>
+        </div>
+
+        <div class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.55-2.28A1 1 0 0121 8.62v6.76a1 1 0 01-1.45.9L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="mt-6 text-lg font-semibold text-ink-900">Video & Motion</h3>
+          <p class="mt-2 text-slate-600">Short-form video and motion graphics engineered for attention on every platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-white py-20 sm:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-brand-600">Client results</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">Don't take our word for it</h2>
+      </div>
+
+      <div class="mt-16 grid gap-6 lg:grid-cols-3">
+        <figure class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-8">
+          <div class="flex gap-1 text-amber-400" aria-label="5 out of 5 stars">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+          </div>
+          <blockquote class="mt-6 flex-1 text-slate-700 leading-relaxed">
+            "Our new site paid for itself in six weeks. Qualified leads are up 180% and the team is a pleasure to work with."
+          </blockquote>
+          <figcaption class="mt-8 flex items-center gap-4">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-brand-500 font-semibold text-white">AO</span>
+            <div>
+              <p class="font-semibold text-ink-900">Adaeze Okafor</p>
+              <p class="text-sm text-slate-500">Marketing Director, Meridian</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="flex flex-col rounded-2xl bg-ink-900 p-8 shadow-2xl lg:-translate-y-4">
+          <div class="flex gap-1 text-amber-400" aria-label="5 out of 5 stars">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+          </div>
+          <blockquote class="mt-6 flex-1 text-slate-200 leading-relaxed">
+            "They rebuilt our ad strategy from scratch. We cut cost per acquisition by 42% in one quarter while scaling spend."
+          </blockquote>
+          <figcaption class="mt-8 flex items-center gap-4">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-cyan-400 font-semibold text-ink-900">JM</span>
+            <div>
+              <p class="font-semibold text-white">James Mensah</p>
+              <p class="text-sm text-slate-400">CEO, Kestrel</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-8">
+          <div class="flex gap-1 text-amber-400" aria-label="5 out of 5 stars">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.9 3.1 1.1-6.5L.5 6.9l6.6-1L10 0l2.9 5.9 6.6 1-4.7 4.7 1.1 6.5z"/></svg>
+          </div>
+          <blockquote class="mt-6 flex-1 text-slate-700 leading-relaxed">
+            "Clear communication, sharp design and real accountability. Northline feels like an extension of our own team."
+          </blockquote>
+          <figcaption class="mt-8 flex items-center gap-4">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-emerald-500 font-semibold text-white">SL</span>
+            <div>
+              <p class="font-semibold text-ink-900">Sarah Lindqvist</p>
+              <p class="text-sm text-slate-500">Head of Growth, Vantage</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="px-4 pb-20 sm:px-6 sm:pb-28 lg:px-8">
+    <div class="relative mx-auto max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-ink-900 px-6 py-16 text-center shadow-2xl sm:px-12">
+      <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-cyan-300/20 blur-3xl"></div>
+      <h2 class="relative text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to grow faster?</h2>
+      <p class="relative mx-auto mt-4 max-w-xl text-lg text-blue-100">Get a free 30-minute strategy call and a tailored growth audit of your current website.</p>
+      <form class="relative mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks, we will be in touch';">
+        <label for="email" class="sr-only">Work email</label>
+        <input id="email" type="email" required placeholder="Enter your work email" class="w-full rounded-xl border-0 px-5 py-4 text-ink-900 placeholder-slate-400 focus:ring-2 focus:ring-cyan-300" />
+        <button type="submit" class="whitespace-nowrap rounded-xl bg-white px-6 py-4 font-semibold text-brand-700 hover:bg-blue-50 transition">Book My Call</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink-900 text-slate-400">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <a href="#top" class="flex items-center gap-2 text-white">
+            <span class="grid h-9 w-9 place-items-center rounded-lg bg-brand-500 font-bold">N</span>
+            <span class="text-lg font-semibold">Northline Studio</span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed">Strategy, design and growth for companies that want measurable results.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Services</h4>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#services" class="hover:text-white transition">Web Design</a></li>
+            <li><a href="#services" class="hover:text-white transition">Performance Marketing</a></li>
+            <li><a href="#services" class="hover:text-white transition">SEO & Content</a></li>
+            <li><a href="#services" class="hover:text-white transition">Brand Identity</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Company</h4>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li><a href="#results" class="hover:text-white transition">Case Studies</a></li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Get in touch</h4>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li>hello@northline.studio</li>
+            <li>+234 800 000 0000</li>
+            <li>Abuja, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm sm:flex-row">
+        <p>&copy; <span id="year"></span> Northline Studio. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-white transition">Privacy</a>
+          <a href="#" class="hover:text-white transition">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
